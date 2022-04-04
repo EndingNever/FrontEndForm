@@ -5,8 +5,8 @@ import { Col, Container, Row } from 'react-bootstrap'
 export default function Info() {
     return (
         <Container className='info-container'>
-            <Row>
-                <Col>
+            <Row className="info-container-col">
+                <Col >
                     <h1>
                         Learn to code by watching others
                     </h1>
