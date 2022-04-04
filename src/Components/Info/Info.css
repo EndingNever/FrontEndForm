@@ -1,14 +1,15 @@
-.row{
-    
+
+
+.info-container {
+  /* border: 2px solid red; */
+  width: 90%;
+  padding-top: 10vh;
 }
 
-.info-container{
-    /* border: 2px solid red; */
-  height: 50vh;
-    width: 90%;
-    padding-top: 10vh;
+.info-container p{
+  line-height: 1.8;
 }
 
-.info-container h1{
-    margin-bottom: 20px;
+.info-container h1 {
+  margin-bottom: 20px;
 }

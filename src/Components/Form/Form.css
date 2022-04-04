@@ -1,0 +1,32 @@
+.border{
+    border: 2px solid red;
+
+}
+
+.userform-container{
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    width: 90%;
+}
+
+.form-control{
+    /* margin-top: 8px;
+    margin-bottom: 8px; */
+}
+
+.userform-btn{
+    background-color: rgb(55,204,138);
+    border-radius: 8px;
+    box-shadow: 0px 8px 2px rgba(0, 0, 0, 0.218);
+    padding: 16px;
+    width: 100%;
+}
+
+.terms{
+    color: tomato;
+}
+
+.by-clicking{
+    color: rgba(128, 128, 128, 0.616);
+}

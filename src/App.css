@@ -5,8 +5,13 @@
   background-image: url('/public/images/bg-intro-mobile.png');
   background-repeat: no-repeat;
   background-position: center;
+  height: 100vh;
 }
 
 .info-component-container{
   /* border: 2px solid red; */
+}
+
+.info-row{
+  /* border: 2px solid purple; */
 }
