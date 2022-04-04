@@ -13,21 +13,21 @@ import { Container, Row, Col } from 'react-bootstrap';
 function App() {
 
   return (
-    <div className="App pb-5">
+    <div className="App pb-5 pb-md-0">
       <Container fluid breakpoints={['xxxl', 'xxl', 'xl', 'lg', 'md', 'sm', 'xs', 'xxs']}>
         <Row className='info-row'>
-          <Col  md={12} lg={6}>
+          <Col md={12} lg={6}>
             <div className="info-component-container mb-3">
               <Info breakpoints={['xxxl', 'xxl', 'xl', 'lg', 'md', 'sm', 'xs', 'xxs']} />
             </div>
           </Col>
-          <Col md={12} lg={6}>
-        <div className="button-component-container mb-4">
-          <Trybutton breakpoints={['xxxl', 'xxl', 'xl', 'lg', 'md', 'sm', 'xs', 'xxs']} />
-        </div>
-        <div className="form-component-container">
-          <UserForm />
-        </div>
+          <Col className="button-and-form-col" md={12} lg={6}>
+            <div className="button-component-container mb-4">
+              <Trybutton breakpoints={['xxxl', 'xxl', 'xl', 'lg', 'md', 'sm', 'xs', 'xxs']} />
+            </div>
+            <div className="form-component-container">
+              <UserForm />
+            </div>
           </Col>
         </Row>
       </Container>

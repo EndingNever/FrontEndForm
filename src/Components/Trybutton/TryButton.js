@@ -12,10 +12,8 @@ export default function TryButton() {
       <Row className='trybutton-row'>
         <Col className='trybutton-col'>
           <Button className="button trybtn-btn">
-            <p>
               <strong>Try it free 7 days</strong>
               then $20/mo. thereafter
-            </p>
           </Button>
         </Col>
       </Row>

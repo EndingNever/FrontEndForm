@@ -7,8 +7,8 @@ import Button from 'react-bootstrap/Button';
 export default function UserForm() {
   return (
     <Container className="userform-container">
-      <Row >
-        <Col>
+      <Row className='userform-container-row'>
+        <Col className='userform-container-col'>
           <Form>
             <Form.Group className='mb-3' controlId='formBasicFirstName'>
               {/* <Form.Label>First Name</Form.Label> */}

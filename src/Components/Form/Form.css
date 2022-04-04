@@ -1,16 +1,21 @@
-.border{
-    border: 2px solid red;
-
-}
-
 .userform-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: white;
     border-radius: 12px;
     padding: 20px;
     width: 90%;
+    border: 2px solid red;
+}
+
+.userform-container-row{
+    width: 100%;
 }
 
 .form-control{
+    /* width: 100%; */
+    padding: 24px;
     /* margin-top: 8px;
     margin-bottom: 8px; */
 }
