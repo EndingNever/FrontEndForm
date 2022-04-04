@@ -15,7 +15,7 @@ function App() {
         <Info   breakpoints={['xxxl', 'xxl', 'xl', 'lg', 'md', 'sm', 'xs', 'xxs']}/>
       </div>
       <div className="button-component-container">
-        <Trybutton />
+        <Trybutton breakpoints={['xxxl', 'xxl', 'xl', 'lg', 'md', 'sm', 'xs', 'xxs']}/>
       </div>
       <div className="form-component-container">
         <Form />

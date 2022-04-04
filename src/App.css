@@ -1,5 +1,10 @@
 .App {
+  color: white;
   text-align: center;
+  background-color: rgb(255,121,120);
+  background-image: url('/public/images/bg-intro-mobile.png');
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .info-component-container{
