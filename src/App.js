@@ -13,7 +13,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 function App() {
 
   return (
-    <div className="App pb-5 pb-md-0">
+    <div className="App pb-5 pb-md-0 ps-md-5 pe-md-5">
       <Container fluid breakpoints={['xxxl', 'xxl', 'xl', 'lg', 'md', 'sm', 'xs', 'xxs']}>
         <Row className='info-row'>
           <Col md={12} lg={6}>

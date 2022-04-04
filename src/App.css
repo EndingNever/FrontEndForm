@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
 .App {
+  font-family: "Poppins", sans-serif;
   color: white;
   text-align: center;
   background-color: rgb(255, 121, 120);
@@ -13,7 +16,7 @@
 }
 
 .info-row {
-  border: 2px solid purple;
+  /* border: 2px solid purple; */
   height: 100%;
   display: flex;
   align-items: center;
@@ -34,7 +37,7 @@
 
 .form-component-container {
   /* border: 2px solid gray; */
-  height: 100%;
+  height: 80%;
 }
 
 @media screen and (min-width: 992px) {
