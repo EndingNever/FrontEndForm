@@ -28,6 +28,26 @@
     width: 100%;
 }
 
+.userform-btn:hover{
+    background-color: rgb(55,204,138);
+    border:none;
+}
+
+.userform-btn :active{
+    background-color: rgb(55,204,138);
+    border: none;
+    outline: none;
+}
+
+.userform-btn:hover,.userform-btn:focus,.userform-btn:active, 
+.userform-btn:active:focus:not(:disabled):not(.disabled),
+.userform-btn:focus, .userform-btn:active, .userform-btn:hover{
+    background-color: rgb(55,204,138);
+    /* box-shadow: none!important; */
+    outline: 0;
+}
+
+
 .terms{
     color: tomato;
 }

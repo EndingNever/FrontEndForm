@@ -5,7 +5,8 @@
   color: white;
   text-align: center;
   background-color: rgb(255, 121, 120);
-  background-image: url("/public/images/bg-intro-mobile.png");
+  background-image: url("/public/images/bg-intro-desktop.png");
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   display: flex;
@@ -37,7 +38,7 @@
 
 .form-component-container {
   /* border: 2px solid gray; */
-  height: 80%;
+  /* height: 85%; */
 }
 
 @media screen and (min-width: 992px) {
@@ -54,5 +55,11 @@
 @media screen and (max-width: 766px) {
   .info-container {
     padding-top: 10vh;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .App{
+    background-image: url("/public/images/bg-intro-mobile.png");
   }
 }

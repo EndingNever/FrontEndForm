@@ -1,34 +1,59 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import "./Form.css"
 import { FormControl, FormGroup, FormLabel, Form } from 'react-bootstrap'
 import Button from 'react-bootstrap/Button';
+import { useRef } from 'react';
 
 export default function UserForm() {
+  const firstName = useRef('')
+  const lastName = useRef('')
+  const userEmail = useRef('')
+  const userPassword = useRef('')
+  const [empty,setEmpty] = useState(false);
+
+
+  const handleSubmit = (e) => {
+    // console.log(e.target[0].value,e.target[1].value,e.target[2].value,e.target[3].value)
+    if (firstName.current.value == '' || lastName.current.value == '' || userEmail.current.value == '' || userPassword.current.value == '') {
+      setEmpty(true);
+      console.log(empty)
+      e.preventDefault();
+      // alert("Please fill out all fields")
+    }
+    else {
+      // console.log(firstName.current.value)
+      setEmpty(false);
+      alert("Thank you for signing up, " + `${firstName.current.value} ${lastName.current.value}!`)
+    }
+  }
   return (
-    <Container className="userform-container">
+    <Container className="userform-container ">
       <Row className='userform-container-row'>
         <Col className='userform-container-col'>
-          <Form>
+          <Form onSubmit={handleSubmit}>
             <Form.Group className='mb-3' controlId='formBasicFirstName'>
               {/* <Form.Label>First Name</Form.Label> */}
-              <Form.Control type='First Name' placeholder='First Name' />
+              <Form.Control ref={firstName} type='First Name' placeholder='First Name' />
             </Form.Group>
             <Form.Group className='mb-3' controlId='formBasicLastName'>
               {/* <Form.Label>Last Name</Form.Label> */}
-              <Form.Control type='Last Name' placeholder='Last Name' />
+              <Form.Control ref={lastName} type='Last Name' placeholder='Last Name' />
             </Form.Group>
             <Form.Group className='mb-3' controlId='formBasicEmail'>
-              <Form.Control type="email" placeholder='Email' />
+              <Form.Control ref={userEmail} type="email" placeholder='Email' />
             </Form.Group>
             <Form.Group className='mb-3' controlId='formBasicPassword'>
-              <Form.Control type='password' placeholder='Password' />
+              <Form.Control ref={userPassword} type='password' placeholder='Password' />
             </Form.Group>
-            <Button className='button userform-btn mb-3 mt-3'>CLAIM YOUR FREE TRIAL</Button>
+            <Button className='button userform-btn mb-3 mt-3' type='submit'>CLAIM YOUR FREE TRIAL</Button>
             <p className=' ps-2 pe-2 by-clicking'>By clicking the button, you are agreeing to our <span className='terms'>Terms and Services</span></p>
+            <div style={{color:"red"}}>
+              {empty===true?<h1>PLEASE FILL OUT ALL FIELDS</h1> : null}
+            </div>
           </Form>
-         </Col>
-       </Row>
-     </Container>
+        </Col>
+      </Row>
+    </Container>
   )
 }
