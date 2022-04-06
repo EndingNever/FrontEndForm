@@ -14,15 +14,12 @@ export default function UserForm() {
 
 
   const handleSubmit = (e) => {
-    // console.log(e.target[0].value,e.target[1].value,e.target[2].value,e.target[3].value)
     if (firstName.current.value == '' || lastName.current.value == '' || userEmail.current.value == '' || userPassword.current.value == '') {
       setEmpty(true);
       console.log(empty)
       e.preventDefault();
-      // alert("Please fill out all fields")
     }
     else {
-      // console.log(firstName.current.value)
       setEmpty(false);
       alert("Thank you for signing up, " + `${firstName.current.value} ${lastName.current.value}!`)
     }
