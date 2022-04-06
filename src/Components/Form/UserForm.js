@@ -49,7 +49,7 @@ export default function UserForm() {
             <Button className='button userform-btn mb-3 mt-3' type='submit'>CLAIM YOUR FREE TRIAL</Button>
             <p className=' ps-2 pe-2 by-clicking'>By clicking the button, you are agreeing to our <span className='terms'>Terms and Services</span></p>
             <div style={{color:"red"}}>
-              {empty===true?<h1>PLEASE FILL OUT ALL FIELDS</h1> : null}
+              {empty===true?<h2 className='shake'>PLEASE FILL OUT ALL FIELDS</h2> : null}
             </div>
           </Form>
         </Col>
