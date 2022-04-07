@@ -18,6 +18,14 @@
   background-color: rgb(93, 84, 163);
 }
 
+.trybtn-btn:hover,.trybtn-btn:focus,.trybtn-btn:active, 
+.trybtn-btn:active:focus:not(:disabled):not(.disabled),
+.trybtn-btn:focus, .trybtn-btn:active, .trybtn-btn:hover{
+    background-color: rgb(93, 84, 163);
+    /* box-shadow: none!important; */
+    outline: 0;
+}
+
 .btn-primary p {
   display: flex;
   align-items: center;
